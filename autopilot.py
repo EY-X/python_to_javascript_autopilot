@@ -31,12 +31,12 @@ def get_gas_display(gas_amount):
   return "{}%".format(gas_amount)
 
 def drive(car, city_distance):
-  if car['gas'] < city_distance:
+  if car['gas'] < city_distancar['city'] = get_destination(car)
+  car['gas'] -= city_distance
+  return "Drove to {}. Remaining gas: {}.".format(car['city'], get_gas_display(car['gas']))ce:
     return fill_up_gas(car)
 
-  car['city'] = get_destination(car)
-  car['gas'] -= city_distance
-  return "Drove to {}. Remaining gas: {}.".format(car['city'], get_gas_display(car['gas']))
+  
 
 def drop_off_passengers(car):
   previous_passengers = car['passengers']
